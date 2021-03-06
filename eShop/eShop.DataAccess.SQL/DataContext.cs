@@ -10,7 +10,7 @@ namespace eShop.DataAccess.SQL
 {
     public class DataContext : DbContext
     {
-        public DataContext() : base("EcomDBConnectionString")
+        public DataContext() : base("eShopDB")
         {
 
         }

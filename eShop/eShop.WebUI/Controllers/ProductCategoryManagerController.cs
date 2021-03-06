@@ -19,7 +19,7 @@ namespace eShop.WebUI.Controllers
             this.context = context;
         }
 
-        // GET: ProductManager
+        // GET: ProductCategoryManager
         public ActionResult Index()
         {
             List<ProductCategory> productCategories = context.Collection().ToList();
