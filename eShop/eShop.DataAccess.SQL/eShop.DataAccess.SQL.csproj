@@ -58,6 +58,10 @@
     <Compile Include="Migrations\202102271546420_Initial.Designer.cs">
       <DependentUpon>202102271546420_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103231705533_AddBasket.cs" />
+    <Compile Include="Migrations\202103231705533_AddBasket.Designer.cs">
+      <DependentUpon>202103231705533_AddBasket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
@@ -75,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102271546420_Initial.resx">
       <DependentUpon>202102271546420_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103231705533_AddBasket.resx">
+      <DependentUpon>202103231705533_AddBasket.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
