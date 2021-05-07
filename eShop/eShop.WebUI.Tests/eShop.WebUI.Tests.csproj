@@ -11,11 +11,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eShop.WebUI.Tests</RootNamespace>
     <AssemblyName>eShop.WebUI.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -100,7 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eShop.WebUI\eShop.WebUI.csproj">
-      <Project>{BDA8ED51-03A1-461F-B9A7-11541EBD2ED3}</Project>
+      <Project>{bda8ed51-03a1-461f-b9a7-11541ebd2ed3}</Project>
       <Name>eShop.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
