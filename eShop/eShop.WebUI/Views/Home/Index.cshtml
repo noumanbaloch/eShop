@@ -33,7 +33,7 @@
                 <p>@item.Price</p>
             </div>
             <div class="col-md-12">
-                <a href="#" class="btn btn-primary btn-block">Add to Basket</a>
+                <a href="@Url.Action("AddToBasket", "Basket", new { Id = item.Id })" class="btn btn-primary btn-block">Add to Basket</a>
             </div>
         </div>
     }
