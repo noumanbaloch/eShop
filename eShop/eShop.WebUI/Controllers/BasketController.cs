@@ -7,10 +7,10 @@ using System.Web.Mvc;
 
 namespace eShop.WebUI.Controllers
 {
-    public class BaksetController : Controller
+    public class BasketController : Controller
     {
         IBasketService basketSerivce;
-        public BaksetController(IBasketService basketService)
+        public BasketController(IBasketService basketService)
         {
             this.basketSerivce = basketService;
         }
@@ -24,14 +24,14 @@ namespace eShop.WebUI.Controllers
         public ActionResult AddtoBasket(string Id)
         {
             basketSerivce.AddToBasket(this.HttpContext, Id);
-            return View();
+            return RedirectToAction("Index");
         }
 
         public ActionResult RemoveFromBasket(string Id)
         {
             basketSerivce.RemoveFromBasket(this.HttpContext, Id);
 
-            return View();
+            return RedirectToAction("Index");
         }
 
         public PartialViewResult BasketSummary()
