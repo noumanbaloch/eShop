@@ -32,7 +32,7 @@ namespace eShop.Services
             if (cookie != null)
             {
                 string basketId = cookie.Value;
-                if (string.IsNullOrEmpty(basketId))
+                if (!string.IsNullOrEmpty(basketId))
                 {
                     basket = basketContext.Find(basketId);
                 }
@@ -64,6 +64,7 @@ namespace eShop.Services
             HttpCookie cookie = new HttpCookie(BasketSessionName);
             cookie.Value = basket.Id;
             cookie.Expires = DateTime.Now.AddDays(1);
+            httpContext.Response.Cookies.Add(cookie);
 
             return basket;
 
