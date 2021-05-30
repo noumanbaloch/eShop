@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace eShop.WebUI.Controllers
 {
+    [Authorize(Roles = "noman@gmail.com")]
     public class ProductCategoryManagerController : Controller
     {
         // GET: ProductCategoryManager
